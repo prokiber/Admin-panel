@@ -277,4 +277,3 @@ for link2 in link :
         
         print ("\n\033[33;39mHarakat qilinyapti: "+link3)
 
-print("Afsuski Admin logini topilmadi...")
