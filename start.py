@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-import sys , urllib.request , os, time
+import sys , urllib.request , os, time, pyfiglet
 
 def timebanner(s):
 
@@ -11,19 +11,16 @@ def timebanner(s):
 
         time.sleep( 0 / 100)
 
-timebanner(" ")
-os.system("pip install pyfiglet && pyfiglet PRO-KIBER")                                                             
-timebanner("|")                                                                              
+os.system("clear")
+prokiber = pyfiglet.figlet_format("STRONG HACKERS")
+print(prokiber)                                                        
 
-timebanner("Sayt manzili (http://www.sayt.uz yoki https://www.sayt.uz dek kiriting")
+timebanner("Sayt manzili http://www.sayt.uz yoki https://www.sayt.uz dek kiriting")
 
 url = input("\nNishon : ")
-print("")
-print ("-------------------------------------------------------------")
+print ("-------------------------------------------------------")                                                                                 
 
-print("                                                                                        ")
-
-link = ('admin/','administrator/','wp-login.php','login.php','administration/','admin1/','admin2/','admin3/','admin4/','admin5/','moderator/','webadmin/','adminarea/','bb-admin/','adminLogin/','admin_area/','panel-administracion/','instadmin/',
+link = ('admin/','admin/login.php','administrator/','wp-login.php','login.php','administration/','admin1/','admin2/','admin3/','admin4/','admin5/','moderator/','webadmin/','adminarea/','bb-admin/','adminLogin/','admin_area/','panel-administracion/','instadmin/',
 
 'memberadmin/','administratorlogin/','adm/','account.asp','admin/account.asp','admin/index.asp','admin/login.asp','admin/admin.asp','/login.aspx',
 
@@ -161,7 +158,7 @@ link = ('admin/','administrator/','wp-login.php','login.php','administration/','
 
 'adminarea/admin.aspx','adminarea/login.aspx','panel-administracion/index.aspx','panel-administracion/admin.aspx','modelsearch/index.aspx',
 
-'modelsearch/admin.aspx','admincontrol/login.aspx','adm/admloginuser.aspx','admloginuser.aspx','admin2.aspx','admin2/login.aspx','admin2/index.aspx','usuarios/login.aspx',
+'modelsearch/admin.aspx','admincontrol/login.aspx','adm/admloginuser.aspx','admloginuser.aspx','admin2.aspx','admin2/login.aspx','admin2/index.aspx','usuarios/login.aspx','cpanel',
 
 'adm/index.aspx','adm.aspx','affiliate.aspx','adm_auth.aspx','memberadmin.aspx','administratorlogin.aspx','memberadmin/','administratorlogin/','adm/','admin/account.js','admin/index.js','admin/login.js','admin/admin.js','admin/account.js',
 
@@ -268,12 +265,16 @@ for link2 in link :
     try :
 
         openurl = urllib.request.urlopen(link3)
-
-        
+      
+     
         print("\n\033[1;34m" + "Admin panel topildi : "+link3)
+       
+     
 
 
     except urllib.error.URLError as msg :
         
         print ("\n\033[33;39mHarakat qilinyapti: "+link3)
 
+print("\nAfsuski Admin logini topilmadi...")
+sys.exit(1)
