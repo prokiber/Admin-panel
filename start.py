@@ -12,7 +12,7 @@ def timebanner(s):
         time.sleep( 0 / 100)
 
 os.system("clear")
-prokiber = pyfiglet.figlet_format("STRONG HACKERS")
+prokiber = pyfiglet.figlet_format("PRO.K1B3R")
 print(prokiber)                                                        
 
 timebanner("Sayt manzili http://www.sayt.uz yoki https://www.sayt.uz dek kiriting")
@@ -20,7 +20,7 @@ timebanner("Sayt manzili http://www.sayt.uz yoki https://www.sayt.uz dek kiritin
 url = input("\nNishon : ")
 print ("-------------------------------------------------------")                                                                                 
 
-link = ('admin/','admin/login.php','administrator/','wp-login.php','login.php','administration/','admin1/','admin2/','admin3/','admin4/','admin5/','moderator/','webadmin/','adminarea/','bb-admin/','adminLogin/','admin_area/','panel-administracion/','instadmin/',
+link = ('admin/','admin/login.php','auth/admin','wp-login.php','login.php','administration/','admin1/','admin2/','admin3/','admin4/','admin5/','moderator/','webadmin/','adminarea/','bb-admin/','adminLogin/','admin_area/','panel-administracion/','instadmin/',
 
 'memberadmin/','administratorlogin/','adm/','account.asp','admin/account.asp','admin/index.asp','admin/login.asp','admin/admin.asp','/login.aspx',
 
